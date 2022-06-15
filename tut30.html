@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media gueries</title>
+</head>
+<style>
+    .box{
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        color: white;
+        font-size: 200%;
+        display: none;
+    }
+    @media(
+        max-width:300px
+    ){
+        #box-1{
+            display: block;
+            background-color: blue;
+            color: antiquewhite;
+
+        }
+    }
+    @media(
+        (min-width:300px) and (max-width:500px)
+    ){
+        #box-2{
+            display: block;
+            background-color: rgb(255, 47, 0);
+            color: antiquewhite;
+
+        }
+    }
+    @media(
+        (min-width:500px) and (max-width:700px)
+    ){
+        #box-3{
+            display: block;
+            background-color: rgb(0, 255, 204);
+            color: antiquewhite;
+
+        }
+    }
+    @media(
+        (min-width:700px) and (max-width:900px)
+    ){
+        #box-4 {
+            display: block;
+            background-color: rgb(0, 0, 0);
+            color: antiquewhite;
+
+        }
+    }
+
+</style>
+<body>
+    <div class="box" id="box-1">mobile</div>
+    <div class="box" id="box-2">tablet</div>
+    <div class="box" id="box-3">laptop</div>
+    <div class="box" id="box-4">bigscreen</div>
+</body>
+</html>
